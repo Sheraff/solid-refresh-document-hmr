@@ -1,5 +1,7 @@
 # solid-refresh: HMR of a module that renders `<html>`
 
+Issue: https://github.com/solidjs/solid-refresh/issues/91
+
 Minimal repro: Vite dev server with SSR (`renderToString`) and `hydrate(() => <Document />, document)`.
 `src/Document.jsx` contains `Document` (renders `<html>`) and `App`. `repro.mjs` edits only App's text
 (V1 → V2 → V3) and prints the DOM and page errors after each edit.
